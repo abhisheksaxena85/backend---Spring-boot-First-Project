@@ -1,15 +1,21 @@
 package com.practice.practice_project.practice_project.Entity;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "users_list_collections")
 public class UserProfileEntity {
 
-    private int id;
+    @Id
+    private String id;
+
     private String name;
 
-    public int getId() {
+    public String getId() {
         return this.id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
