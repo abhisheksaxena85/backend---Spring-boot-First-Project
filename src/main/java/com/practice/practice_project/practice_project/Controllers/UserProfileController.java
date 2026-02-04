@@ -3,6 +3,8 @@ package com.practice.practice_project.practice_project.Controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,13 +26,13 @@ public class UserProfileController {
     UserListService userListService;
 
     @GetMapping("/get-all-users")
-    public List<UserProfileEntity> getUserData() {
-        return userListService.getAllUsers();
+    public ResponseEntity<List<UserProfileEntity>> getUserData() {
+        return new ResponseEntity<>(userListService.getAllUsers(), HttpStatus.OK);
     }
 
     @GetMapping("/get-user-by-id")
-    public UserProfileEntity getUserById(@RequestParam String id) {
-        return userListService.getUserById(id);
+    public ResponseEntity<UserProfileEntity> getUserById(@RequestParam String id) {
+        return new ResponseEntity<>(userListService.getUserById(id), HttpStatus.FORBIDDEN);
     }
 
     @PostMapping("/create-user")
