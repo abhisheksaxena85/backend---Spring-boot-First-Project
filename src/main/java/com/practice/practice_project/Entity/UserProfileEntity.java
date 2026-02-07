@@ -1,4 +1,4 @@
-package com.practice.practice_project.practice_project.Entity;
+package com.practice.practice_project.Entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

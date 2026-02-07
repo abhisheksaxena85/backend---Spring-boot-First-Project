@@ -1,4 +1,4 @@
-package com.practice.practice_project.practice_project.Controllers;
+package com.practice.practice_project.Controllers;
 
 import java.util.List;
 
@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.practice.practice_project.practice_project.Entity.UserProfileEntity;
-import com.practice.practice_project.practice_project.Services.UserListService;
+import com.practice.practice_project.Entity.UserProfileEntity;
+import com.practice.practice_project.Services.UserListService;
 
 @RestController
 @RequestMapping("user")

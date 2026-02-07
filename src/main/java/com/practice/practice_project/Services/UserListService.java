@@ -1,12 +1,12 @@
-package com.practice.practice_project.practice_project.Services;
+package com.practice.practice_project.Services;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.practice.practice_project.practice_project.Entity.UserProfileEntity;
-import com.practice.practice_project.practice_project.repositories.UserListRepository;
+import com.practice.practice_project.Entity.UserProfileEntity;
+import com.practice.practice_project.repositories.UserListRepository;
 
 @Component
 public class UserListService {
